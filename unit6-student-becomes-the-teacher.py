@@ -17,18 +17,20 @@ tyler = {
     "tests": [100.0, 100.0]
 }
 
-# Add your function below!
+
 def average(numbers):
     total = sum(numbers)
     total = float(total)
     result = total / len(numbers)
     return result
 
+
 def get_average(student):
     homework = average(student["homework"]) * .1
     quizzes = average(student["quizzes"]) * .3
     tests = average(student["tests"]) * .6
     return homework + quizzes + tests
+
 
 def get_letter_grade(score):
     if score >= 90:
@@ -43,6 +45,7 @@ def get_letter_grade(score):
         return "F"
 
 print get_letter_grade(get_average(lloyd))
+
 
 def get_class_average(students):
     results = []
